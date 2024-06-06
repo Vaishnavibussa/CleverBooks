@@ -5,6 +5,7 @@ export default function Navbar() {
     <nav className="navbar">
         
       <ul>
+        
         <li><a href="#cleverbooks" className='logo'>CleverBooks</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#pricing">Pricing</a></li>
