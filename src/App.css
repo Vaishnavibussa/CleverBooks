@@ -1,0 +1,283 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  background-color: #eae9e9; /* Dark blue background */
+  color: #0b0b0b; /* White text */
+  padding: 1rem; /* Add some padding */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  border-bottom: 2px solid #2E4053; /* Add a dark blue border */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.navbar li {
+  margin-right: 30px; /* Increase margin for better spacing */
+  position: relative; /* Add a relative position for the hover effect */
+}
+
+.navbar a {
+  /* font-size: medium; */
+  font-weight: 600;
+  color: #000000; /* White text */
+  text-decoration: none;
+  transition: color 0.2s ease; /* Add a smooth transition */
+}
+
+.navbar a:hover {
+  color: #66D9EF; /* Light blue on hover */
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #66D9EF; /* Light blue underline */
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.logo {
+  font-size: 24px; /* Increase font size */
+  font-weight: bold; /* Make font bold */
+  color: #fff; /* White text */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin-right: 50px; /* Increase margin for better spacing */
+}
+.navbar a:hover::before {
+  transform: scaleX(1);
+}
+/* Hero Section */
+.hero-sec {
+  background-color: #f0f4f8; /* Light blue background */
+  color: #333; /* Dark text color */
+  padding: 100px 0; /* Add some padding*/
+
+}
+.hero-sec h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+ }
+
+/* Key Problems Section */
+.Key-Prob {
+  background-color: #010101; /* Light gray background */
+  color: #c2bbbb; /* Dark text color */
+  border: 1px solid #DDD; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Increased padding */
+  width: 80%; /* Set width to 80% */
+  margin: 40px auto; /* Center the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.problem-section {
+  margin-bottom: 20px; /* Add some margin */
+  padding: 20px; /* Add some padding */
+  border-bottom: 1px solid #DDD; /* Add a light gray border */
+}
+
+.problem-section:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.problem-section h3 {
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Make font bold */
+  margin-bottom: 10px; /* Add some margin */
+}
+
+.problem-section p {
+  font-size: 16px; /* Increase font size */
+  margin-bottom: 20px; /* Add some margin */
+}
+/* Key Metrics Section */
+.key-metric {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text color */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Increased padding */
+}
+h2{
+  margin-left: 70px;
+}
+
+.key-metric h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.metric {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #e5e5e5; /* Dark gray background */
+  border-radius: 10px;
+}
+
+.metric .icon {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #000000; /* White icon color */
+}
+
+.chart-icon {
+  image: url('https://i.pinimg.com/736x/59/c2/39/59c239ca0326da461f537329f0c14fd5.jpg');
+}
+
+.clock-icon {
+  background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=UzMhdrW1&id=6FFF8EC85802B81689729F6C4BB282811D7F5F24&thid=OIP.UzMhdrW11o4I7k4A77hXDwHaHa&mediaurl=https%3a%2f%2fposhhome.com.au%2fwp-content%2fuploads%2f2020%2f04%2fFVD412.jpg&exph=600&expw=600&q=clock+posh&simid=608017776162585687&FORM=IRPRST&ck=2FCF518AC98DE759BEEB7516EF692399&selectedIndex=30&itb=0');
+}
+
+.robot-icon {
+  background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=31FXaH9R&id=5F74A3EB4300B4A89EFAE87164771E6010F3EEB9&thid=OIP.31FXaH9RZ48ISUPTwQbS6AHaK1&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f74%2fbd%2f6d%2f74bd6d0e08555f451ab9793241f21464.jpg&exph=1600&expw=1094&q=robot++posh+in+web+pages&simid=608034973217201019&FORM=IRPRST&ck=6CC98EA1261DEFD2429CA5931B2C0DB1&selectedIndex=15&itb=0');
+}
+
+/* Reviews Section */
+/* Reviews Section */
+.reviews-sec {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark text color */
+  padding: 20px; /* Increased padding */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Add some margin */
+}
+
+.reviews-sec h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.review {
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  padding: 20px; /* Increased padding */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Add some margin */
+}
+
+.review h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.review p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Problem Target Section */
+/* Problem Target Section */
+.prob-target {
+  background-color: #d4f1f4; /* Light cyan background */
+  color: #333; /* Dark text color */
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Increased padding */
+  margin-bottom: 20px; /* Add some margin */
+}
+
+.prob-target h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px; /* Add some border radius */
+  transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.tab.active {
+  background-color: #e9ecef; /* Add a hover effect */
+}
+
+.tab img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Add a border radius to the image */
+  margin-bottom: 10px; /* Add some margin */
+}
+
+.tab-content {
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  padding: 20px; /* Increased padding */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Add some margin */
+}
+/* CTA Section */
+.cta-sec {
+  background-color: #f8d7da; /* Light red background */
+  color: #333; /* Dark text color */
+  border: 2px solid #dc3545; /* Red border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Increased padding */
+  margin-bottom: 20px; /* Add some margin */
+}
+
+.cta-sec h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.cta-sec button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff; /* Blue button */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.cta-sec button:hover {
+  background-color: #0056b3; /* Add a hover effect */
+}
+
+/* Footer Section */
+.footer-sec {
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 20px;
+  border-top: 2px solid #6c757d; /* Gray border */
+  text-align: center; /* Center the text */
+}
